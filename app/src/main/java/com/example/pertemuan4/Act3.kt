@@ -50,3 +50,31 @@ fun ActivitasPertama(modifier: Modifier){
                 containerColor = Color.DarkGray
             )
         ) {
+            Row() {
+                val gambar = painterResource(R.drawable.img)
+                Image(
+                    painter = gambar,
+                    contentDescription = null,
+                    modifier = Modifier.size(100.dp).padding(5.dp)
+                )
+                Spacer(modifier = Modifier.width(30.dp))
+                Column(){
+                    Text(
+                        stringResource(R.string.Nama),
+                        fontSize = 30.sp,
+                        fontFamily = FontFamily.Cursive,
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 15.dp)
+                    )
+                    Text(
+                        stringResource(R.string.Alamat),
+                        fontSize = 20.sp,
+                        color = Color.Yellow,
+                        modifier = Modifier.padding(top = 10.dp)
+                    )
+                }
+
+            }
+
+        }
+
